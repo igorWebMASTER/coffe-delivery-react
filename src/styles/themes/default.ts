@@ -1,5 +1,5 @@
 export const defaultTheme = {
-    'yellow-dar': '#C47F17',
+    'yellow-dark': '#C47F17',
     'yellow': '#DBAC2C',
     'yellow-light': '#F1E9C9',
     'purple-dark': '#4b2995',

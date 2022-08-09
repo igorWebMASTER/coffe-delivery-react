@@ -2,14 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+        font-family: Roboto, Inter, Avenir, Helvetica, Arial, sans-serif;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
-
-        /* color-scheme: light dark; */
-        color: rgba(255, 255, 255, 0.87);
-        background-color: #242424;
 
         font-synthesis: none;
         text-rendering: optimizeLegibility;
@@ -23,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
     :focus {
         outline: none;
     }
@@ -30,6 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         -webkit-font-smoothing: antialiased;
         font-synthesis: none;
+        background: ${(props) => props.theme['background']};
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -37,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body, input, textarea, button {
-        font-family: 'Roboto', sans-serif;
+        font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 1rem;
    }
